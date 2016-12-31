@@ -5,9 +5,9 @@ def second_challenge
    meat: ["chicken", "steak", "salmon"],
    grains: ["rice", "pasta"]
   }
-
-  #code your solution here!
-
-  
-
+  bigList=[]
+  groceries.each do |category,array|
+    array.each {|item| bigList<<item}
+  end
+  bigList
 end
